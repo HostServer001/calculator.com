@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Calculator
+    </title>
+  </head>
+  <style type="text/css">
+    .body{
+      background-image : url('https://te.legra.ph/file/d6cfa93cab5490e74cb7b.jpg');
+      background-repeat : no-repeat;
+      color : white;
+      background-size : cover
+    }  
+    .btn{
+      height : 10vh;
+      width : 20vh;
+      inline : block;
+      margin : auto;
+      border-radius : 15px;
+      border-width : 10px
+    }
+    .copyRight{
+      display : flex;
+      align-item : bottom;
+    }
+  </style>
+  <body class="body" align="center">
+    <h1>
+      《Calculator》
+    </h1>
+    <br>
+    <button class="btn" onclick="addFunc()">
+      [+]ADD   
+    </button>
+    <button class="btn" onclick="mulFunc()">
+      [×]MUL
+    </button>
+      <br>
+    <button class="btn" onclick="subFunc()">
+      [-]SUB
+    </button>
+    <button class="btn" onclick="divFunc()">
+      [÷]DIV
+    </button>   
+    <p id="toWrite">
+    </p>
+    <script type="text/javascript">
+      function addFunc() {
+        var num1 = prompt("Num1: ")
+        var num2 = prompt("Num 2: ")
+        var x = parseInt(num1)
+        var y = parseInt(num2)
+        var sum = x+y
+        alert("Result: "+ sum)
+      }
+      function mulFunc() {
+      var num1 = prompt("Num1: ")
+      var num2 = prompt("Num 2: ")
+      var x = parseInt(num1)
+      var y = parseInt(num2)
+      var sum = x*y
+      alert("Result: "+ sum)
+      }
+      function subFunc() {
+      var num1 = prompt("Num1: ")
+      var num2 = prompt("Num 2: ")
+      var x = parseInt(num1)
+      var y = parseInt(num2)
+      var sum = x-y
+      alert("Result: "+ sum)
+      }
+      function divFunc() {
+      var num1 = prompt("Num1: ")
+      var num2 = prompt("Num 2: ")
+      var x = parseInt(num1)
+      var y = parseInt(num2)
+      var sum = x/y
+      alert("Result: "+ sum)
+      }
+    </script>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    <p align="center">© 2022 Jai V K</p>
+  </body>  
+</html>
